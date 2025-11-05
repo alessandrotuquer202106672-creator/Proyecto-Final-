@@ -1,0 +1,274 @@
+ERROR - 2025-11-04 17:11:48 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'produccion_calz...', 3306, '', 0)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Folios->index()
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+#9 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Folios->index()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-11-04 17:11:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: folios]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `folios`
+ORDER BY `folio_id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Folios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-04 17:11:54 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'produccion_calz...', 3306, '', 0)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Folios->index()
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+#9 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Folios->index()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-11-04 17:11:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: folios]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `folios`
+ORDER BY `folio_id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Folios.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Folios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Folios))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-04 17:12:51 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'produccion_calz...', 3306, '', 0)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+#9 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-11-04 17:12:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: programaciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `programaciones`
+ORDER BY `programacion_id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-04 17:12:55 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'produccion_calz...', 3306, '', 0)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+#9 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\XAMPP\htdocs\proyecto_final\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-11-04 17:12:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: programaciones]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `programaciones`
+ORDER BY `programacion_id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Programaciones.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-04 17:17:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "programaciones/show.php"
+[Method: GET, Route: programaciones/show/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('programaciones/show.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('programaciones/show', [], true)
+ 3 APPPATH\Controllers\Programaciones.php(31): view('programaciones/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->show('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-04 17:24:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`produccion_calzado`.`movimientos`, CONSTRAINT `movimientos_ibfk_1` FOREIGN KEY (`folio_id`) REFERENCES `folios` (`folio_id`)) in C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\XAMPP\htdocs\proyecto_final\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `fo...', 0)
+#1 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fo...')
+#2 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fo...')
+#3 C:\XAMPP\htdocs\proyecto_final\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fo...', Array, false)
+#4 C:\XAMPP\htdocs\proyecto_final\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\XAMPP\htdocs\proyecto_final\system\BaseModel.php(1152): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\XAMPP\htdocs\proyecto_final\app\Controllers\Programaciones.php(98): CodeIgniter\BaseModel->delete()
+#7 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(933): App\Controllers\Programaciones->update('1')
+#8 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+#9 C:\XAMPP\htdocs\proyecto_final\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMPP\htdocs\proyecto_final\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\XAMPP\htdocs\proyecto_final\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-11-04 17:24:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`produccion_calzado`.`movimientos`, CONSTRAINT `movimientos_ibfk_1` FOREIGN KEY (`folio_id`) REFERENCES `folios` (`folio_id`))
+[Method: POST, Route: programaciones/update/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `folios`
+WHERE `programacion_id` = :programacion_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1152): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Controllers\Programaciones.php(98): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-04 17:24:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`produccion_calzado`.`movimientos`, CONSTRAINT `movimientos_ibfk_1` FOREIGN KEY (`folio_id`) REFERENCES `folios` (`folio_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `folios`
+WHERE `programacion_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `folios`
+WHERE `programacion_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `folios`
+WHERE `programacion_id` = :programacion_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1152): CodeIgniter\Model->doDelete(null, false)
+ 6 APPPATH\Controllers\Programaciones.php(98): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->update('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-04 17:24:03 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`produccion_calzado`.`movimientos`, CONSTRAINT `movimientos_ibfk_1` FOREIGN KEY (`folio_id`) REFERENCES `folios` (`folio_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `folios`
+WHERE `programacion_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `folios`
+WHERE `programacion_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `folios`
+WHERE `programacion_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `folios`
+WHERE `programacion_id` = :programacion_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1152): CodeIgniter\Model->doDelete(null, false)
+ 7 APPPATH\Controllers\Programaciones.php(98): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Programaciones->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programaciones))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
