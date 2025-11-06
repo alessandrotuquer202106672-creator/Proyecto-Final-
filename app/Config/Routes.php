@@ -28,3 +28,8 @@ $routes->post('modificar_area','AreasController::modificarArea');
 $routes->get('/dashboard/admin', 'Dashboard::admin');
 $routes->get('/dashboard/supervisor', 'Dashboard::supervisor');
 $routes->get('/dashboard/operador', 'Dashboard::operador');
+
+$routes->get('folios', 'Folios::index');
+$routes->match(['get','post'], 'folios/create', 'Folios::create');
+$routes->get('folios/confirmDelete/(:num)', 'Folios::confirmDelete/$1');
+$routes->post('folios/delete/(:num)', 'Folios::delete/$1');
