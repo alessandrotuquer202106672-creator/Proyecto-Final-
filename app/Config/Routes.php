@@ -6,10 +6,6 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-
-$routes->get('/', 'Home::index');
-
-
 $routes->get('folios', 'Folios::index');
 $routes->match(['get','post'], 'folios/create', 'Folios::create');
 $routes->get('folios/confirmDelete/(:num)', 'Folios::confirmDelete/$1');
