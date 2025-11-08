@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Panel de Administración</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
 
     <div class="container py-5 text-center">
@@ -16,7 +18,7 @@
 
         <div class="row justify-content-center g-3">
             <div class="col-md-3">
-                <a href="<?= base_url('/login') ?>" class="btn btn-primary w-100 py-3">
+                <a href="<?= base_url('/areas') ?>" class="btn btn-primary w-100 py-3">
                     <i class="bi bi-diagram-3"></i> Áreas
                 </a>
             </div>
@@ -36,8 +38,13 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="<?= base_url('/movimientos_reparaciones') ?>" class="btn btn-secondary w-100 py-3">
-                    <i class="bi bi-tools"></i> Movimientos y Reparaciones
+                <a href="<?= base_url('/movimientos') ?>" class="btn btn-secondary w-100 py-3">
+                    <i class="bi bi-tools"></i> Movimientos
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?= base_url('/reparaciones') ?>" class="btn btn-secondary w-100 py-3">
+                    <i class="bi bi-tools"></i>Reparaciones
                 </a>
             </div>
         </div>
@@ -46,4 +53,5 @@
     <!-- Íconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
+
 </html>

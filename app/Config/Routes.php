@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-<<<<<<< HEAD
+
 
 $routes->get('/', 'Home::index');
 
@@ -27,12 +27,12 @@ $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
 $routes->get('usuarios','UsuariosController::index');
 $routes->get('areas','AreasController::index');
-=
+
 
 $routes->post('/login/autenticar', 'Login::autenticar');
 $routes->get('/logout', 'Login::logout');
 
-<<<<<<< HEAD
+
 $routes->post('agregar_usuario','UsuariosController::agregarUsuario');
 $routes->post('agregar_area','AreasController::agregarArea');
 
@@ -65,4 +65,4 @@ $routes->post('agregar_movimiento', 'Movimientos::agregar_movimiento');  // Agre
 $routes->get('eliminar_movimiento/(:num)', 'Movimientos::eliminar_movimiento/$1'); // Eliminar por ID
 $routes->get('editar_movimiento/(:num)', 'Movimientos::editar_movimiento/$1');     // Cargar formulario de edición
 $routes->post('actualizar_movimiento', 'Movimientos::actualizar_movimiento');      // Guardar cambios
-=======
+
