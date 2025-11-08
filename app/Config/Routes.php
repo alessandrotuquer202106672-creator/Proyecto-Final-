@@ -5,6 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
 $routes->get('/', 'Home::index');
 
 
@@ -44,4 +45,12 @@ $routes->post('modificar_area','AreasController::modificarArea');
 $routes->get('/dashboard/admin', 'Dashboard::admin');
 $routes->get('/dashboard/supervisor', 'Dashboard::supervisor');
 $routes->get('/dashboard/operador', 'Dashboard::operador');
+
+
+$routes->get('reparaciones', 'ReparacionesController::index');
+$routes->post('reparaciones/agregar', 'ReparacionesController::agregarReparacion');
+$routes->get('reparaciones/eliminar/(:num)', 'ReparacionesController::eliminarReparaciones/$1');
+$routes->get('reparaciones/buscar/(:num)', 'ReparacionesController::buscarReparaciones/$1');
+$routes->post('reparaciones/modificar', 'ReparacionesController::modificarReparaciones');
+
 
